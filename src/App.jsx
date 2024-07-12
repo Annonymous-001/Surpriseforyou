@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { SpeedInsights } from "@vercel/speed-insights/react"
 
 function App() {
-  <SpeedInsights/>
+
   const [showCongratulations, setShowCongratulations] = useState(false);
   const [noButtonPosition, setNoButtonPosition] = useState({ top: '58%', left: '70%' });
   const [isMobile, setIsMobile] = useState(false);
@@ -86,6 +86,7 @@ function App() {
               Close
             </button>
           </div>
+          <SpeedInsights/>
         </div>
       )}
     </>
