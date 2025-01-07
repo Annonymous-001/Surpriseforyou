@@ -15,6 +15,7 @@ function App() {
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 768);
     };
+    
 
     handleResize();
     window.addEventListener('resize', handleResize);
@@ -31,6 +32,7 @@ function App() {
 
   const handleYesClick = () => {
     setShowCongratulations(true);
+    
   };
 
   const closeCongratulations = () => {
@@ -102,12 +104,13 @@ function App() {
       )}
 
       {showMaleMessage && (
-        <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-gray-900 bg-opacity-50">
-          <div className="p-6 bg-white rounded-lg shadow-lg text-center">
-            <h2 className="text-2xl font-bold mb-4">Message</h2>
-            <p className="mb-4">Nikal laude tere liye kuch nhi hai</p>
-          </div>
-        </div>
+        <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black">
+        <img
+          src="https://c.tenor.com/XIz7gqlX_XkAAAAC/tenor.gif"
+          alt="Funny GIF"
+          className="w-full h-full object-cover"
+        />
+      </div>
       )}
 
       {!showGenderModal && !showNameModal && !showMaleMessage && (
