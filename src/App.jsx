@@ -121,9 +121,7 @@ function App() {
           />
           <div className="absolute inset-0 flex items-center justify-center">
             <div className="w-auto max-w-xs p-6 bg-white bg-opacity-80 rounded-lg shadow-lg text-center relative">
-{/*               <p className="mb-4">Hey {userName || 'Lili'}, would you like to go on a date with me?</p> */}
-              <p className="mb-4" dangerouslySetInnerHTML={{ __html: `Hey ${userName || 'Lili'}, would you like to go on a date with me?` }}></p>
-
+              <p className="mb-4">Hey {userName || 'Lili'}, would you like to go on a date with me?</p>
               <div className="flex justify-center space-x-4">
                 <button 
                   className="px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600"
